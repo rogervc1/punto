@@ -1,0 +1,174 @@
+ERROR - 2022-12-27 00:40:53 --> mysqli_sql_exception: Duplicate entry '12345649' for key 'codigo' in C:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\pos\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\pos\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\pos\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\pos\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\pos\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\pos\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\pos\system\BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\pos\app\Controllers\Productos.php(65): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\pos\system\CodeIgniter.php(927): App\Controllers\Productos->insertar()
+#10 C:\xampp\htdocs\pos\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#11 C:\xampp\htdocs\pos\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-27 00:40:53 --> Duplicate entry '12345649' for key 'codigo'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `productos` (`codigo`, `nombre`, `precio_venta`, `precio_compra`, `stock_minimo`, `inventariable`, `id_unidad`, `id_categoria`, `fecha_alta`, `fecha_edit`) VALUES (\'12345649\', \'salchicha\', \'12.00\', \'10.00\', \'5\', \'1\', \'1\', \'2\', \'2022-12-27 00:40:53\', \'2022-12-27 00:40:53\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `productos` (`codigo`, `nombre`, `precio_venta`, `precio_compra`, `stock_minimo`, `inventariable`, `id_unidad`, `id_categoria`, `fecha_alta`, `fecha_edit`) VALUES (\'12345649\', \'salchicha\', \'12.00\', \'10.00\', \'5\', \'1\', \'1\', \'2\', \'2022-12-27 00:40:53\', \'2022-12-27 00:40:53\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `productos` (`codigo`, `nombre`, `precio_venta`, `precio_compra`, `stock_minimo`, `inventariable`, `id_unidad`, `id_categoria`, `fecha_alta`, `fecha_edit`) VALUES (\'12345649\', \'salchicha\', \'12.00\', \'10.00\', \'5\', \'1\', \'1\', \'2\', \'2022-12-27 00:40:53\', \'2022-12-27 00:40:53\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`codigo`, `nombre`, `precio_venta`, `precio_compra`, `stock_minimo`, `inventariable`, `id_unidad`, `id_categoria`, `fecha_alta`, `fecha_edit`) VALUES (:codigo:, :nombre:, :precio_venta:, :precio_compra:, :stock_minimo:, :inventariable:, :id_unidad:, :id_categoria:, :fecha_alta:, :fecha_edit:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Productos.php(65): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->insertar()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-27 00:49:26 --> mysqli_sql_exception: Duplicate entry '123456789' for key 'codigo' in C:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\pos\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\pos\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\pos\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\pos\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\pos\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\pos\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\pos\system\BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\pos\app\Controllers\Productos.php(83): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\pos\system\CodeIgniter.php(927): App\Controllers\Productos->insertar()
+#10 C:\xampp\htdocs\pos\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#11 C:\xampp\htdocs\pos\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-27 00:49:26 --> Duplicate entry '123456789' for key 'codigo'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `productos` (`codigo`, `nombre`, `precio_venta`, `precio_compra`, `stock_minimo`, `inventariable`, `id_unidad`, `id_categoria`, `fecha_alta`, `fecha_edit`) VALUES (\'123456789\', \'adadad\', \'1\', \'2\', \'3\', \'1\', \'1\', \'1\', \'2022-12-27 00:49:26\', \'2022-12-27 00:49:26\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `productos` (`codigo`, `nombre`, `precio_venta`, `precio_compra`, `stock_minimo`, `inventariable`, `id_unidad`, `id_categoria`, `fecha_alta`, `fecha_edit`) VALUES (\'123456789\', \'adadad\', \'1\', \'2\', \'3\', \'1\', \'1\', \'1\', \'2022-12-27 00:49:26\', \'2022-12-27 00:49:26\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `productos` (`codigo`, `nombre`, `precio_venta`, `precio_compra`, `stock_minimo`, `inventariable`, `id_unidad`, `id_categoria`, `fecha_alta`, `fecha_edit`) VALUES (\'123456789\', \'adadad\', \'1\', \'2\', \'3\', \'1\', \'1\', \'1\', \'2022-12-27 00:49:26\', \'2022-12-27 00:49:26\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`codigo`, `nombre`, `precio_venta`, `precio_compra`, `stock_minimo`, `inventariable`, `id_unidad`, `id_categoria`, `fecha_alta`, `fecha_edit`) VALUES (:codigo:, :nombre:, :precio_venta:, :precio_compra:, :stock_minimo:, :inventariable:, :id_unidad:, :id_categoria:, :fecha_alta:, :fecha_edit:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Productos.php(83): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->insertar()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-27 00:51:16 --> mysqli_sql_exception: Duplicate entry '123456789' for key 'codigo' in C:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\pos\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\pos\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\pos\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\pos\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\pos\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\pos\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\pos\system\BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\pos\app\Controllers\Productos.php(83): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\pos\system\CodeIgniter.php(927): App\Controllers\Productos->insertar()
+#10 C:\xampp\htdocs\pos\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#11 C:\xampp\htdocs\pos\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-27 00:51:16 --> Duplicate entry '123456789' for key 'codigo'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `productos` (`codigo`, `nombre`, `precio_venta`, `precio_compra`, `stock_minimo`, `inventariable`, `id_unidad`, `id_categoria`, `fecha_alta`, `fecha_edit`) VALUES (\'123456789\', \'jsjjs\', \'1\', \'2\', \'3\', \'1\', \'1\', \'1\', \'2022-12-27 00:51:16\', \'2022-12-27 00:51:16\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `productos` (`codigo`, `nombre`, `precio_venta`, `precio_compra`, `stock_minimo`, `inventariable`, `id_unidad`, `id_categoria`, `fecha_alta`, `fecha_edit`) VALUES (\'123456789\', \'jsjjs\', \'1\', \'2\', \'3\', \'1\', \'1\', \'1\', \'2022-12-27 00:51:16\', \'2022-12-27 00:51:16\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `productos` (`codigo`, `nombre`, `precio_venta`, `precio_compra`, `stock_minimo`, `inventariable`, `id_unidad`, `id_categoria`, `fecha_alta`, `fecha_edit`) VALUES (\'123456789\', \'jsjjs\', \'1\', \'2\', \'3\', \'1\', \'1\', \'1\', \'2022-12-27 00:51:16\', \'2022-12-27 00:51:16\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`codigo`, `nombre`, `precio_venta`, `precio_compra`, `stock_minimo`, `inventariable`, `id_unidad`, `id_categoria`, `fecha_alta`, `fecha_edit`) VALUES (:codigo:, :nombre:, :precio_venta:, :precio_compra:, :stock_minimo:, :inventariable:, :id_unidad:, :id_categoria:, :fecha_alta:, :fecha_edit:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Productos.php(83): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->insertar()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-27 00:51:39 --> Undefined variable $unidades
+in APPPATH\Views\productos\nuevo.php on line 37.
+ 1 APPPATH\Views\productos\nuevo.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $unidades', 'APPPATH\\Views\\productos\\nuevo.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\productos\\nuevo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('productos/nuevo', [], true)
+ 5 APPPATH\Controllers\Productos.php(88): view('productos/nuevo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->insertar()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-27 07:09:57 --> mysqli_sql_exception: Table 'pos.clientes' doesn't exist in C:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\pos\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\pos\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\pos\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pos\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pos\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\pos\app\Controllers\Clientes.php(35): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\pos\system\CodeIgniter.php(927): App\Controllers\Clientes->index()
+#8 C:\xampp\htdocs\pos\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#9 C:\xampp\htdocs\pos\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-12-27 07:09:57 --> Table 'pos.clientes' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `clientes`
+WHERE `activo` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `clientes`
+WHERE `activo` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `clientes`
+WHERE `activo` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `clientes`
+WHERE `activo` = :activo:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Clientes.php(35): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Clientes->index()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-27 07:12:23 --> mysqli_sql_exception: Table 'pos.clientes' doesn't exist in C:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\pos\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\pos\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\pos\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pos\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pos\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\pos\app\Controllers\Clientes.php(35): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\pos\system\CodeIgniter.php(927): App\Controllers\Clientes->index()
+#8 C:\xampp\htdocs\pos\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#9 C:\xampp\htdocs\pos\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-12-27 07:12:23 --> Table 'pos.clientes' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `clientes`
+WHERE `activo` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `clientes`
+WHERE `activo` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `clientes`
+WHERE `activo` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `clientes`
+WHERE `activo` = :activo:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Clientes.php(35): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Clientes->index()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
